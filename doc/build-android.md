@@ -17,6 +17,8 @@ API levels from 24 to 29 have been tested to work.
 If the build includes Qt, environment variables `ANDROID_SDK` and `ANDROID_NDK` need to be set as well but can otherwise be omitted.
 This is an example command for a default build with no disabled dependencies:
 
+Verify the location of Sdk and ndk on the computer, Android Studio might install on a different folder and environment variables need to be updated to match computer structure.
+
     ANDROID_SDK=/home/user/Android/Sdk ANDROID_NDK=/home/user/Android/Sdk/ndk-bundle make HOST=aarch64-linux-android ANDROID_API_LEVEL=28 ANDROID_TOOLCHAIN_BIN=/home/user/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin
 
 
